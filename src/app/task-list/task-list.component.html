@@ -1,0 +1,91 @@
+<br>
+<!-- Taking inputs -->
+<div class="form-row">
+  <div class="add-field">
+    <mat-form-field class="ex-full-width">
+      <input matInput type="text" required minlength="5" placeholder="Enter Task" #task="ngModel" ngModel
+        name="taskTitle">
+    </mat-form-field>
+    <div *ngIf="task.invalid && (task.dirty || task.touched)">
+      <small *ngIf="task.errors?.['required']" class="warning">*Task title is required.</small>
+      <small *ngIf="task.errors?.['minlength']" class="warning">*Task title must be at least 5 characters long.</small>
+    </div>
+  </div>
+  <div class="add-field">
+    <mat-form-field class="ex-full-width">
+      <input matInput type="text" required minlength="10" placeholder="Enter Details" #details="ngModel" ngModel
+        name="taskDetails">
+    </mat-form-field>
+    <div *ngIf="details.invalid && (details.dirty || details.touched)">
+      <small *ngIf="details.errors?.['required']" class="warning">*Task details is required.</small>
+      <small *ngIf="details.errors?.['minlength']" class="warning">*Task details must be at least 10 characters
+        long.</small>
+    </div>
+  </div>
+  <div class="add-field">
+    <mat-form-field appearance="fill" class="ex-full-width">
+      <mat-label>Choose priority</mat-label>
+      <mat-select [(ngModel)]="prioritySelect">
+        <mat-option value="table-danger">High</mat-option>
+        <mat-option value="table-warning">Med</mat-option>
+        <mat-option value="table-success">Low</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+<div class="button">
+  <button mat-raised-button
+    (click)="createtask(task.value,details.value); task.reset(); details.reset();resetDropdown()"
+    [disabled]="!task.valid || !details.valid">Add new task</button>
+</div>
+<br>
+
+<!-- search by id -->
+<div class="form-row">
+  <div class="form-field">
+    <mat-form-field class="example-full-width">
+      <input matInput type="text" required placeholder="Search by ID" [(ngModel)]="value">
+    </mat-form-field>
+  </div>
+  <!-- search by title -->
+  <div class="form-field">
+    <mat-form-field class="example-full-width">
+      <input matInput type="text" required placeholder="Search by title" [(ngModel)]="flagtitle">
+    </mat-form-field>
+  </div>
+  <!-- search by description -->
+  <div class="form-field">
+    <mat-form-field class="example-full-width">
+      <input matInput type="text" required placeholder="Search by description" [(ngModel)]="flagdescription">
+    </mat-form-field>
+  </div>
+  <!-- </form> -->
+  <mat-form-field class="example-full-width" class="form-field">
+    <mat-label>Filter by Priority</mat-label>
+    <mat-select [(ngModel)]="formpriority">
+      <mat-option value="all">All</mat-option>
+      <mat-option value="table-danger">High</mat-option>
+      <mat-option value="table-warning">Med</mat-option>
+      <mat-option value="table-success">Low</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<!-- Displaying Tasks -->
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let t of tasks$| async">
+    <tr class="{{t.priority}}" *ngIf="valid(t)==true">
+      <th>{{t.id}}</th>
+      <td>{{t.title}}</td>
+      <td><button mat-raised-button (click)="delete(t.id)">Delete</button></td>
+      <td><button mat-raised-button (click)="goTodetail(t.id)">View details</button></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,30 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(2, 2, 88);
+}
+
+.nav {
+    justify-content: right;
+}
+
+.button {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: large;
+    min-width: 70px;
+    max-width: 70px;
+    width: 100%;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    width: 100%;
+    min-width: 170px;
+    max-width: 170px;
+}

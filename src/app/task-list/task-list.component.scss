@@ -1,0 +1,56 @@
+.warning {
+  color: red;
+  margin-top: 0px;
+}
+
+.example-full-width {
+  // width: 350px;
+  width: 100%;
+}
+
+.ex-full-width {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  width: 100%;
+}
+
+.mat-form-field {
+  flex: 1;
+}
+
+.form-field {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-field:last-child {
+  margin-right: 0px;
+}
+
+.add-field {
+  flex: 1;
+  margin-right: 10px;
+  width: 33%;
+}
+
+.add-field:last-child {
+  margin-right: 0px;
+}
+
+.table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(2, 2, 88);
+  color: white;
+}
+
+.button button:enabled {
+  background-color: rgb(2, 2, 88);
+  color: white;
+}

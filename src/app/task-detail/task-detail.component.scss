@@ -1,0 +1,39 @@
+.warning {
+  color: red;
+}
+
+.example-form {
+  min-width: 250px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.title {
+  font-size: xx-large;
+  padding-top: 30px;
+}
+
+.details {
+  font-size: large;
+}
+
+.edit {
+  width: 100%;
+}
+
+.button button:enabled {
+  background-color: rgb(2, 2, 88);
+  color: white;
+}
+
+.button button {
+  margin: 10px;
+}
+
+.button button:first-child {
+  margin-left: 0px;
+}

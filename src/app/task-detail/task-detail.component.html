@@ -1,0 +1,32 @@
+<!-- Displaying Task -->
+<div *ngIf="task" class="edit">
+  <p class="title">{{ task.title }}</p>
+  <p class="details">{{ task.description }}</p>
+  <br>
+  <div class="button">
+    <button mat-raised-button (click)="edit(task.description)" *ngIf="flag==false">Edit details</button>
+    <button mat-raised-button (click)="home()" *ngIf="flag==false">Back</button>
+  </div>
+  <!-- Taking input -->
+  <div *ngIf="flag==true">
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput type="text" required minlength="10" placeholder="Edit Details" #details="ngModel" ngModel
+          name="taskDetails" [(ngModel)]="updatedetails">
+      </mat-form-field>
+    </form>
+    <div *ngIf="details.invalid && (details.dirty || details.touched)">
+      <small *ngIf="details.errors?.['required']" class="warning">*Task details is required.</small>
+      <small *ngIf="details.errors?.['minlength']" class="warning">*Task details must be at least 10 characters
+        long.</small>
+    </div>
+    <div class="button">
+      <button mat-raised-button (click)="editdetails(task)" [disabled]="!details.valid">Save</button>
+      <button mat-raised-button (click)="home()">Back</button>
+    </div>
+  </div>
+  <br>
+</div>
+  <div *ngIf="!task">
+    <p>Task not found.</p>
+  </div>
