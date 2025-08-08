@@ -58,11 +58,10 @@ ts-node server.ts
 ## 🖼️ Screenshots
 
 ### Add Task Form
-![Add Task](https://github.com/user-attachments/assets/f4a642bf-15c6-4521-a0fc-9988cad5f18d)
+![Add Task](https://github.com/user-attachments/assets/22276df5-67ed-4e5c-a569-7a45e9c64209)
 
 ### Description Edit Page
 ![Edit Task](https://github.com/user-attachments/assets/70728b84-94a3-4a2c-adee-76b87692754f)
-
 
 ## 🌐 Live Site
 
