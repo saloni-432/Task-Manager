@@ -50,8 +50,6 @@ ts-node server.ts
 3. View your tasks in a structured list format.
 4. Mark tasks as completed or delete them as needed.
 
-The application is designed to help users efficiently manage their daily tasks through a minimal and responsive interface.
-
 ## 🖼️ Screenshots
 
 ### Dashboard View
