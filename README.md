@@ -57,11 +57,13 @@ ts-node server.ts
 
 ## 🖼️ Screenshots
 
-### Dashboard View
-![Dashboard](./screenshots/dashboard.png)
-
 ### Add Task Form
-![Add Task](./screenshots/add-task.png)
+![Add Task](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f4a642bf-15c6-4521-a0fc-9988cad5f18d" />
+)
+
+### Description Edit Page
+![Edit Task](<img width="1917" height="881" alt="Screenshot (115)" src="https://github.com/user-attachments/assets/70728b84-94a3-4a2c-adee-76b87692754f" />)
+
 
 ## 🌐 Live Site
 
