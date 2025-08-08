@@ -4,16 +4,14 @@ The **Task‑Manager** is a full-stack task management web application built wit
 
 ## ✨ Features
 
-- 🧩 Built with Angular component-based architecture
-- ⚡ Real-time UI updates and reactive state handling
-- ➕ Add tasks with dynamic form handling
-- 📋 View tasks in an organized, structured list
-- ✅ Mark tasks as completed with a single click
-- ❌ Delete tasks instantly
-- 💡 Responsive design for multiple screen sizes
-- 🔄 Automatic UI refresh on task changes
-- 🛠️ Backend-ready for API integration via `server.ts`
-- 🧪 Scalable structure for adding authentication, database, and CRUD functionality in future
+- Built with Angular component-based architecture
+- Real-time UI updates and reactive state handling
+- Add tasks with dynamic form handling
+- View tasks in an organized, structured list
+- Mark tasks as completed with a single click
+- Delete tasks instantly
+- Responsive design for multiple screen sizes
+- Automatic UI refresh on task changes
 
 ## 🛠️TechStack
 
