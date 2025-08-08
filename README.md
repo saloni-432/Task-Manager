@@ -65,8 +65,7 @@ ts-node server.ts
 
 ## 🌐 Live Site
 
-You can access the live version of this project here:  
-**🔗 [View Live Application](https://your-deployment-link.com)**
+**🔗 [Manage Your Tasks Here](https://task-manager-sigma-pied.vercel.app/)**
 <!--
 # TaskManager
 
