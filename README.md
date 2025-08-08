@@ -62,7 +62,7 @@ ts-node server.ts
 )
 
 ### Description Edit Page
-![Edit Task](<img width="1917" height="881" alt="Screenshot (115)" src="https://github.com/user-attachments/assets/70728b84-94a3-4a2c-adee-76b87692754f" />)
+[Edit Task](<img width="1917" height="881" alt="Screenshot (115)" src="https://github.com/user-attachments/assets/70728b84-94a3-4a2c-adee-76b87692754f" />)
 
 
 ## 🌐 Live Site
